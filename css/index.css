@@ -1,27 +1,77 @@
 @import url("https://fonts.googleapis.com/css?family=Do+Hyeon");
 
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+html, body {min-height:100%}
 body {
-	background-color: #fff;
-	max-width: 990px;
-	background: url(../img/backgrounds.jpg) no-repeat center top;
-	background-size: 100%;
-    background-attachment: fixed;
-	margin: auto;
-	padding: 0 5px;
-	color: #333;
-	font-size: 17px;
+  background: url(https://html5book.ru/wp-content/uploads/2017/04/aleksandar-radovanovic-13513.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+   max-width: 990px;
+    margin: auto;
+    padding: 0 5px;
+}
+p {color: #524f4e;}
+header nav a {
+    background: white;
+    padding: 5px 10px;
+    border-bottom: none;
+	border-radius: 3px;
+ }
+.current-demo, header nav a:hover {
+    box-shadow: 0 5px 0 #524f4e;
+}
+.top-menu {
+  position: relative;
+  background: rgba(34,34,34,.2);
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left}
+.right-item {float: right}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition:.3s linear;
+}
+.menu-main a:hover{background:rgba(0,0,0,.3)}
+@media(max-width:830px) {
+.menu-main {padding-top: 90px;text-align:center}
+.navbar-logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+   
 }
 
+.menu-main li{float: none;display:inline-block;}
+.menu-main a{line-height:normal;padding: 20px 15px;
+  font-size: 16px;}
+}
 
-@media (min-width: 400px) {
-	header nav {
-		display: flex;
-	}
-	header ul {
-		display: flex;
-		flex: 1;
-		align-items: center;
-	}
 
 	header div.banner {
 		height: 206px;
@@ -44,92 +94,17 @@ body {
 
 
 
-	.wrap {
-		max-width: 1140px;
-		min-width: 960px;
-		margin: 0 auto;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
-	@media only screen and (min-width:1430px) {
-		.anniv-top {
-			display: block;
-		}
-
-	}
-
-	.nav-add-head,
-	.nav-main,
 	.nav-sec,
 	.nav-sec ul,
 	.g-grid,
-	.nav-footer,
-	.testims {
+	.nav-footer
+	 {
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
 	}
 
-
-	.b-nav-main {
-		background-color: #D85EA3;
-		margin-bottom: 9px;
-	}
-
-	.nav-main {
-		font-size: 16px;
-		line-height: 23px;
-		text-transform: uppercase;
-		text-align: center;
-		display: flex;
-	}
-
-	.nav-main li {
-		display: inline-block;
-		flex: 1 0 auto;
-	}
-
-	.nav-main a,
-	.nav-main a:hover,
-	.nav-main .act,
-	.cart-btn,
-	.cart-btn:hover {
-		color: #fff;
-	}
-
-	.nav-main a,
-	.nav-main .act {
-		display: block;
-		padding: 7px;
-		margin-right: 25px;
-		text-decoration: none;
-	}
-
-	.nav-main a:hover,
-	.nav-main .act {
-		background-color: #FD9AD2;
-	}
-
-	.nav-main li:before {
-		content: '';
-		color: #fff;
-		font-size: 12px;
-		float: right;
-		border-left: 1px solid #fff;
-		height: 12px;
-		margin-top: 13px;
-		margin-right: 12px;
-	}
-
-	.nav-main li:last-child a {
-		margin-right: 0;
-	}
-
-	.nav-main li:last-child:before {
-		display: none;
-	}
-
+	
 	.b-title {
 		color: #171416;
 		font-size: 18px;

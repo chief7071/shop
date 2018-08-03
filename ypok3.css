@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Hanalei+Fill|Montserrat');
 
 
-:root {
-    font-family: 'Montserrat', sans-serif;
-}
 
 body {
-    max-width: 800px;
+    max-width:1000px;
+    background: url(../img/background.jpg) no-repeat center top;
+    background-size: 100%;
+    background-attachment: fixed;
     margin: auto;
     padding: 0 5px;
 }
@@ -53,7 +53,7 @@ header nav ul li a:hover {
 
 header div.banner {
     height: 500px;
-    background-image: url(../img/tesla.jpg);
+    background-image: url(../img/tesla-model-x-black.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
